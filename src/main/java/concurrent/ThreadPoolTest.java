@@ -18,9 +18,9 @@ public class ThreadPoolTest implements Runnable{
 
     public static void main(String[] args) {
         // 创建固定大小的线程池
-        // ExecutorService threadPool = Executors.newFixedThreadPool(3);
+        ExecutorService threadPool = Executors.newFixedThreadPool(3);
         // 创建不固定大小的线程池
-        ExecutorService threadPool = Executors.newCachedThreadPool();
+        // ExecutorService threadPool = Executors.newCachedThreadPool();
         // 创建单一线程
         // ExecutorService threadPool = Executors.newSingleThreadExecutor();
         ThreadPoolTest threadPoolTest = new ThreadPoolTest();
